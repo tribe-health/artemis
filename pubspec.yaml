@@ -20,7 +20,7 @@ dependencies:
   gql_exec: ^0.2.4
   gql_http_link: ^0.3.2
   gql_link: ^0.3.1-alpha
-  gql: ^0.12.4
+  gql: ^0.13.0
   http: ^0.12.2
   json_annotation: ^4.0.1
   meta: ^1.7.0
@@ -33,6 +33,7 @@ dependency_overrides:
   build: ^2.0.0
   glob: ^2.0.0
   dart_style: ^2.0.0
+  gql: ^0.13.0
 
 dev_dependencies:
   args: ^2.3.0
