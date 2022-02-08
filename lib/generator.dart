@@ -223,34 +223,14 @@ Iterable<QueryDefinition> generateDefinitions({
       usedInputObjects: {},
     );
 
-<<<<<<< HEAD
-    final visitor = GeneratorVisitor(
-      context: context,
-    );
-
-    final filteredDefinition = DocumentNode(
-      definitions: document.definitions
-          // filtering unused operations
-          .where((e) {
-        return e is! OperationDefinitionNode || e == operation;
-      }).toList(),
-    );
-
-    filteredDefinition.accept(visitor);
-=======
     final visitor = GeneratorVisitor(context: context);
     final documentDefinitions = DocumentNode(definitions: definitions);
     documentDefinitions.accept(visitor);
->>>>>>> tribe
 
     return QueryDefinition(
       name: name,
       operationName: operationName,
-<<<<<<< HEAD
-      document: filteredDefinition,
-=======
       document: documentDefinitions,
->>>>>>> tribe
       classes: [
         ...context.usedEnums
             .map((e) => canonicalVisitor.enums[e.name]?.call())
