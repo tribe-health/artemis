@@ -1,13 +1,18 @@
 name: artemis
+<<<<<<< HEAD
 version: 6.18.4
+=======
+version: 7.3.1-beta
+>>>>>>> tribe
 
 description: Build dart types from GraphQL schemas and queries (using Introspection Query).
 homepage: https://github.com/comigor/artemis
 
 environment:
-  sdk: ">=2.8.0 <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
 
 dependencies:
+<<<<<<< HEAD
   build_config: ^0.4.5
   build: ^2.0.0
   code_builder: ^3.2.0
@@ -44,3 +49,34 @@ dev_dependencies:
   pedantic: ^1.11.1
   test: ^1.15.7
   logging: ^1.0.2
+=======
+  build_config: ^1.0.0
+  code_builder: ^4.1.0
+  build: ^2.2.1
+  collection: ^1.15.0
+  dart_style: ^2.2.1
+  equatable: ^2.0.3
+  glob: ^2.0.2
+  gql_code_builder: ^0.4.1-alpha+1642769088378
+  gql_dedupe_link: ^2.0.2-alpha
+  gql_exec: ^0.4.1-alpha+1642769088308
+  gql_http_link: ^0.4.3-alpha+1642769088355
+  gql_link: ^0.4.3-alpha+1642769088318
+  gql: ^0.13.1-alpha+1642769088298
+  http: ^0.13.4
+  json_annotation: ^4.4.0
+  path: ^1.8.1
+  recase: ^4.0.0
+  source_gen: ^1.2.1
+  yaml: ^3.1.0
+
+dev_dependencies:
+  args: ^2.3.0
+  build_runner: ^2.1.7
+  build_test: ^2.1.5
+  json_serializable: ^6.1.4
+  build_resolvers: ^2.0.6
+  test: ^1.20.1
+  logging: ^1.0.2
+  lints: ^1.0.1
+>>>>>>> tribe
